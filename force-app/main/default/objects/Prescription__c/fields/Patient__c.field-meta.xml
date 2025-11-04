@@ -1,0 +1,7 @@
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Patient__c</fullName>
+    <label>Patient</label>
+    <type>Lookup</type>
+    <referenceTo>Patient__c</referenceTo>
+    <relationshipName>Patient_Prescriptions</relationshipName>
+</CustomField>

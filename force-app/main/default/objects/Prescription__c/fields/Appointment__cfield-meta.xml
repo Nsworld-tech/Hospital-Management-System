@@ -1,0 +1,6 @@
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment__c</fullName>
+    <label>Appointment</label>
+    <type>Lookup</type>
+    <referenceTo>Appointment__c</referenceTo>
+</CustomField>

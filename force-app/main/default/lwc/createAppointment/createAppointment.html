@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Create Appointment">
+        <div class="slds-p-around_medium">
+            <lightning-combobox
+                name="patient"
+                label="Select Patient"
+                value={selectedPatientId}
+                placeholder="Select a patient"
+                options={patientsOptions}
+                onchange={handlePatientChange}>
+            </lightning-combobox>
+
+            <lightning-input type="date" label="Date" value={date} onchange={handleDateChange}></lightning-input>
+            <lightning-input type="time" label="Time" value={time} onchange={handleTimeChange}></lightning-input>
+
+            <lightning-button label="Create Appointment" onclick={handleCreateAppointment} class="slds-m-top_small"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

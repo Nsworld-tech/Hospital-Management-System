@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Hospital Management Access</label>
+
+    <!-- Object Permissions -->
+    <objectPermissions>
+        <object>Patient__c</object>
+        <allowCreate>true</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>true</allowEdit>
+        <allowDelete>true</allowDelete>
+        <viewAllRecords>true</viewAllRecords>
+        <modifyAllRecords>true</modifyAllRecords>
+    </objectPermissions>
+
+    <objectPermissions>
+        <object>Doctor__c</object>
+        <allowCreate>true</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>true</allowEdit>
+        <allowDelete>true</allowDelete>
+        <viewAllRecords>true</viewAllRecords>
+        <modifyAllRecords>true</modifyAllRecords>
+    </objectPermissions>
+
+    <objectPermissions>
+        <object>Appointment__c</object>
+        <allowCreate>true</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>true</allowEdit>
+        <allowDelete>true</allowDelete>
+        <viewAllRecords>true</viewAllRecords>
+        <modifyAllRecords>true</modifyAllRecords>
+    </objectPermissions>
+
+    <!-- Field Permissions for Patient__c -->
+    <fieldPermissions>
+        <field>Patient__c.Name</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Patient__c.ProblemDescription__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+
+    <!-- Field Permissions for Doctor__c -->
+    <fieldPermissions>
+        <field>Doctor__c.Name</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+
+    <!-- Field Permissions for Appointment__c -->
+    <fieldPermissions>
+        <field>Appointment__c.Name</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Appointment__c.Patient__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Appointment__c.Doctor__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+</PermissionSet>

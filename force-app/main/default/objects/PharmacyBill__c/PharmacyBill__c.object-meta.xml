@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Pharmacy Bill</label>
+    <pluralLabel>Pharmacy Bills</pluralLabel>
+    <nameField>
+        <type>AutoNumber</type>
+        <label>Bill Number</label>
+        <displayFormat>PB-{0000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>
